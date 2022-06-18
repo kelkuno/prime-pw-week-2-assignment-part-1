@@ -18,13 +18,17 @@ console.log(fullName);
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 
-let luckyNumber = 29;
+let luckyNumber = 22;
+
+console.log(luckyNumber);
 
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
 
 console.log( 'My  name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner!');
+
+console.log(luckyNumber);
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 
@@ -51,6 +55,8 @@ pets +=2;
 
 const allowedPets = 3;
 
+console.log(luckyNumber);
+
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
  if(adventurous){ 
@@ -60,15 +66,16 @@ const allowedPets = 3;
  else{
     console.log("How about we stay home?");
  }
-
+ console.log(luckyNumber);
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if(luckyNumber = 2 && adventurous) {
+if(luckyNumber == 2 && adventurous) {
     console.log("roll the dice!");
 }
 else {
     console.log("Better luck next time.");
 }
+console.log(luckyNumber);
 // 15 - Write a conditional that console logs "I can have more pets!" 
 //if the value of `pets` is less than the value of `allowedPets`,
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
@@ -117,6 +124,22 @@ else {
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
+
+switch (luckyNumber){
+
+    case 1:
+        console.log("First is the worst");
+        break;
+    case 2:
+        console.log("Second is the best");
+        break;
+    case 3: 
+        console.log("Third is the one with the polka dot dress");
+        break;
+    default:
+        console.log("Luck is what happens when preparation meets opportunity");
+        break;
+}
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
